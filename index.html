@@ -38,37 +38,38 @@
     
     <form action="">
         <div>
-            <label for="nama">Nama</label>
-            <input type="text" id="nama" required>
+            <label for="name">Nama</label>
+            <input type="text" id="name" required placeholder="Nama">
         </div>
 
         <div>
             <label for="email">Email</label>
-            <input type="text" id="email" required>
+            <input type="text" id="email" required placeholder="Email">
         </div>
 
         <div>
             <label for="phonenumber">Phone Number</label>
-            <input type="number" id="phonenumber" required>
+            <input type="number" id="phonenumber" required placeholder="Number">
         </div>
         <div>
             <label for="subject">Subject</label>
-            <select id="subject">
-                <option value="">Frontend Developer</option>
-                <option value="">Backend Developer</option>
-                <option value="">Fullstack Developer</option>
+            <select name="subject" id="subject">
+                <option value="">select</option>
+                <option value="Frontend">Frontend Developer</option>
+                <option value="Backend">Backend Developer</option>
+                <option value="fullDev">Fullstack Developer</option>
             </select>
         </div>
         <div>
             <label for="message">Your Message</label>
-            <textarea name="" id="message" cols="30" rows="10"></textarea>
+            <textarea name="" id="message" cols="30" rows="10" required placeholder="message"></textarea>
         </div>
         <div>
-            <button>submit</button>
+            <button type="button" onclick="submitHandler()">submit</button>
         </div>
     </form>
     
-    
+    <script src="./assets/JS/javascript.js"></script>
     
 </body>
 </html>
