@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
     <link rel="stylesheet" href="assets/CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     
 </head>
 <body>
@@ -14,60 +15,72 @@
         <div class="nav-left">
             <ul>
                 <li>
-                    <a href="">
+                    <a href="" class="logo">
                         <img src="assets/img/dumbways.png" alt="Logo DumbWays">
                     </a>
                 </li>
-                <li><a href="">Home</a></li>
-                <li><a href="">My Project</a></li>
+                <li><a href="" class="home">Home</a></li>
+                <li><a href="" class="myProject">My Project</a></li>
             </ul>
         </div>
         <div class="nav-right">
             <ul>
                 <li>
-                    <button>
+                    <button class="firstButton">
                         <a href="https://api.whatsapp.com/send/?phone=6285866447475&text&type=phone_number&app_absent=0"      target="_blank">Contact Me</a>
+                    </button>
+                </li>
+                <li>
+                    <button class="secondButton" onclick="hamburgerButton()">
+                        <i class="fa-solid fa-bars" ></i>
                     </button>
                 </li>
             </ul>
         </div>
     </nav>
+    <div class="nav2 hide">
+        <a href="">Home</a>
+        <a href="">My Project</a>
+        <a href=""><button>Contact</button></a>
+    </div>
 
 
     <h1>GET IN TOUCH</h1>
     
-    <form action="">
-        <div>
-            <label for="name">Nama</label>
-            <input type="text" id="name" required placeholder="Nama">
-        </div>
-
-        <div>
-            <label for="email">Email</label>
-            <input type="text" id="email" required placeholder="Email">
-        </div>
-
-        <div>
-            <label for="phonenumber">Phone Number</label>
-            <input type="number" id="phonenumber" required placeholder="Number">
-        </div>
-        <div>
-            <label for="subject">Subject</label>
-            <select name="subject" id="subject">
-                <option value="">select</option>
-                <option value="Frontend">Frontend Developer</option>
-                <option value="Backend">Backend Developer</option>
-                <option value="fullDev">Fullstack Developer</option>
-            </select>
-        </div>
-        <div>
-            <label for="message">Your Message</label>
-            <textarea name="" id="message" cols="30" rows="10" required placeholder="message"></textarea>
-        </div>
-        <div>
-            <button type="button" onclick="submitHandler()">submit</button>
-        </div>
-    </form>
+        <form action="" class="containerForm">
+            <div>
+                <label for="name">Nama</label>
+                <input type="text" id="name" required placeholder="Nama">
+            </div>
+    
+            <div>
+                <label for="email">Email</label>
+                <input type="text" id="email" required placeholder="Email">
+            </div>
+    
+            <div>
+                <label for="phonenumber">Phone Number</label>
+                <input type="number" id="phonenumber" required placeholder="Number">
+            </div>
+            <div>
+                <label for="subject">Subject</label>
+                <select name="subject" id="subject">
+                    <option value="">select</option>
+                    <option value="Frontend">Frontend Developer</option>
+                    <option value="Backend">Backend Developer</option>
+                    <option value="fullDev">Fullstack Developer</option>
+                </select>
+            </div>
+            <div>
+                <label for="message">Your Message</label>
+                <textarea name="" id="message" cols="30" rows="10" required placeholder="message"></textarea>
+            </div>
+            <div class="containerSubmit">
+                <button class="submit" type="button" onclick="submitHandler()">submit</button>
+            </div>
+        </form>
+    
+    
     
     <script src="./assets/JS/script.js"></script>
     

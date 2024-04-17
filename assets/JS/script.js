@@ -29,3 +29,9 @@ function submitHandler() {
 
     console.log(data)
 }
+
+function hamburgerButton () {
+    const hamburger = document.querySelector(".nav2"); 
+
+    hamburger.classList.toggle("hide")
+}

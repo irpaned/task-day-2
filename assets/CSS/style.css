@@ -1,3 +1,7 @@
+
+  
+
+
 body {
     background-color: rgb(227, 225, 231);
     font-family: Arial, Helvetica, sans-serif;
@@ -16,6 +20,7 @@ nav {
     height: 50px;
     
 }
+
 
 .nav-left ul {
     display: flex;
@@ -45,10 +50,20 @@ nav {
     
 }
 
+
+
 .nav-right ul {
     list-style-type: none;
     align-items: center;
+    display: flex;
+    justify-content: space-between;
 }
+
+.nav-right ul i {
+    margin-right: 10px;
+}
+
+    
 
 .nav-right a {
     text-decoration: none;
@@ -58,11 +73,12 @@ nav {
     
 }
 
-.nav-right button {
+.nav-right .firstButton {
     background-color: black;
     border: none;
     border-radius: 5px;
     padding: 3px 15px;
+    margin-right: 30px;
     
 }
 
@@ -73,11 +89,90 @@ nav {
     
 }
 
-/* FORM */
+
+.nav2 {
+    /* display: flex; TESTTTTTT */
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    /* border: 2px solid black; */
+    text-align: center;
+    background-color: rgb(192, 192, 192);
+    
+}
+
+.hide {
+    display: none !important;
+}
+
+.nav2 a {
+    padding: 8px 0;
+    text-decoration: none;
+    /* border: 2px solid wheat; */
+    color: black;
+}
+
+.nav2 button {
+    background-color: black;
+    color: white;
+    padding: 3px 10px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.secondButton {
+    border: none;
+    width: 20px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+@media only screen and (max-width: 385px) {
+    .containerForm {
+        width: 90%;
+        padding: 0 20px;
+        margin: 10px auto;
+    }
+}  
+
+@media only screen and (max-width: 420px) {
+    .nav-left .home, .myProject {
+        display: none;
+    }
+    .nav-right .firstButton {
+        display: none;
+    }
+
+    .nav-left ul {  
+       margin-left: -110px; 
+    }
+
+    .nav-right {
+        margin-right: -70px;
+    }
+
+   
+
+
+}
+
+@media only screen and (min-width: 420px) {
+        .nav-right .secondButton  {
+            display: none;
+        }
+
+        .nav2 {
+            display: none;
+        }
+}
+
+
 form {
     width: 350px;
     height: 500px;
     margin: 10px auto;
+    padding: 0 5px;
     
 }
 
@@ -98,7 +193,7 @@ textarea {
     height: 80px;
 }
 
-form div button {
+form div .firstButton {
     background-color: black;
     color: white;
     padding: 5px 20px;
@@ -112,7 +207,7 @@ form div button {
     
 }
 
-form div button:hover {
+form div .firstButton:hover {
     background-color: rgb(99, 99, 99);
     color: rgb(255, 255, 255);
     padding: 5px 20px;
@@ -130,3 +225,17 @@ form label {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+form .submit {
+    background-color: black;
+    color: white;
+    padding: 3px 10px;
+    border-radius: 10px;
+    border: none;
+    
+}
+
+
+.containerSubmit {
+    display: flex;
+    justify-content: end;
+}
